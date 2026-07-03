@@ -14,15 +14,18 @@
   <div class="site-shell">
     <header class="topbar">
       <div class="shell topbar-inner">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="MVTEC 홈">
           <span class="brand-mark">MV</span>
           <span class="brand-copy">
             <strong>MVTEC.CO.KR</strong>
             <span>Libraries & Products</span>
           </span>
         </a>
-        <nav class="nav">
-          <a href="index.html">메인</a>
+        <nav class="nav" aria-label="주요 메뉴">
+          <a href="index.html">홈</a>
+          <a href="about.html">소개</a>
+          <a href="services.html">서비스</a>
+          <a href="cases.html">적용 사례</a>
           <a class="is-active" href="libraries.html">라이브러리</a>
           <a href="contact.html">문의</a>
           <a href="legal.html">법적 고지</a>
@@ -35,7 +38,7 @@
         <div class="hero-panel">
           <span class="eyebrow">Reference Directory</span>
           <h1>대표적인 영상처리 라이브러리와 제품군</h1>
-          <p class="hero-copy">아래 항목은 참고용 소개입니다. 특정 제품 판매 페이지가 아니라, 문제 유형에 따라 검토할 수 있는 대표 선택지를 정리한 것입니다.</p>
+          <p class="hero-copy">아래 항목은 참고용 소개입니다. 특정 제품 판매 페이지가 아니라 문제 유형과 운영 조건에 따라 검토할 수 있는 대표 선택지를 정리한 것입니다.</p>
         </div>
       </section>
 
@@ -44,38 +47,50 @@
           <article class="library-card">
             <span class="tag">Open Source</span>
             <h3>OpenCV</h3>
-            <p>범용 오픈소스 컴퓨터비전 라이브러리. 빠른 프로토타이핑과 커스텀 알고리즘 구현에 적합합니다.</p>
+            <p>범용 오픈소스 컴퓨터비전 라이브러리입니다. 빠른 프로토타이핑과 커스텀 알고리즘 구현에 적합합니다.</p>
             <a href="https://opencv.org/" target="_blank" rel="noreferrer">공식 사이트</a>
           </article>
           <article class="library-card">
             <span class="tag">Commercial</span>
             <h3>HALCON</h3>
-            <p>산업용 머신비전에서 널리 쓰이는 상용 라이브러리. 다양한 검사, 측정, 정렬, 딥러닝 기능을 제공합니다.</p>
+            <p>산업용 머신비전에서 널리 쓰이는 상용 라이브러리로 다양한 검사, 측정, 정렬 기능을 제공합니다.</p>
             <a href="https://www.mvtec.com/products/halcon/" target="_blank" rel="noreferrer">공식 사이트</a>
           </article>
           <article class="library-card">
             <span class="tag">No-Code</span>
             <h3>MERLIC</h3>
-            <p>코드 작성 부담을 낮춘 비전 소프트웨어. 빠른 현장 구성과 GUI 기반 워크플로우에 강점이 있습니다.</p>
+            <p>코드 작성 부담을 낮춘 GUI 기반 비전 소프트웨어로 빠른 현장 구성과 운영에 유리합니다.</p>
             <a href="https://www.mvtec.com/products/merlic/product-information" target="_blank" rel="noreferrer">공식 사이트</a>
           </article>
           <article class="library-card">
             <span class="tag">Commercial</span>
             <h3>Cognex VisionPro</h3>
-            <p>복잡한 PC 기반 비전 애플리케이션 구축에 강한 상용 툴킷입니다.</p>
+            <p>PC 기반 머신비전 애플리케이션 구축에 많이 쓰이는 상용 툴킷입니다.</p>
             <a href="https://www.cognex.com/EN/products/machine-vision/vision-software/visionpro-software" target="_blank" rel="noreferrer">공식 사이트</a>
           </article>
           <article class="library-card">
-            <span class="tag">Camera SDK</span>
+            <span class="tag">SDK</span>
             <h3>Basler pylon</h3>
-            <p>카메라 제어와 이미지 획득을 위한 SDK 및 툴 모음입니다. Basler 카메라 환경에서 자주 사용됩니다.</p>
+            <p>카메라 제어와 이미지 획득을 위한 SDK 및 운영 툴 모음으로 Basler 카메라 환경에서 자주 사용됩니다.</p>
             <a href="https://www.baslerweb.com/en-us/software/pylon/" target="_blank" rel="noreferrer">공식 사이트</a>
           </article>
           <article class="library-card">
-            <span class="tag">Camera SDK</span>
+            <span class="tag">SDK</span>
             <h3>IDS peak</h3>
-            <p>IDS 카메라를 위한 SDK 및 운영 툴. GigE Vision, USB3 Vision 기반 통합에 적합합니다.</p>
+            <p>IDS 카메라를 위한 SDK 및 운영 툴로 GigE Vision, USB3 Vision 통합에 적합합니다.</p>
             <a href="https://en.ids-imaging.com/ids-peak.html" target="_blank" rel="noreferrer">공식 사이트</a>
+          </article>
+          <article class="library-card">
+            <span class="tag">Inference Stack</span>
+            <h3>CUDA / TensorRT</h3>
+            <p>딥러닝 기반 추론 속도 최적화가 필요한 환경에서 자주 검토되는 GPU 가속 스택입니다.</p>
+            <a href="https://developer.nvidia.com/tensorrt" target="_blank" rel="noreferrer">공식 사이트</a>
+          </article>
+          <article class="library-card">
+            <span class="tag">Camera SDK</span>
+            <h3>Hikrobot MVS</h3>
+            <p>Hikrobot 카메라 제어 및 이미지 획득용 SDK 계열로 현장 장비 구성에 따라 검토됩니다.</p>
+            <a href="https://www.hikrobotics.com/en/machinevision/service/download/" target="_blank" rel="noreferrer">공식 사이트</a>
           </article>
         </div>
       </section>
@@ -83,10 +98,14 @@
       <section class="section">
         <div class="legal-banner">
           <strong>상표 고지</strong>
-          <p>OpenCV, HALCON, MERLIC, VisionPro, pylon, IDS peak 등 각 제품명과 상표는 해당 권리자에게 귀속됩니다. 본 사이트는 독립적인 컨설팅 사이트입니다.</p>
+          <p>OpenCV, HALCON, MERLIC, VisionPro, pylon, IDS peak, TensorRT, Hikrobot 등 각 제품명과 상표는 해당 권리자에게 귀속됩니다. 본 사이트는 독립적인 컨설팅 사이트입니다.</p>
         </div>
       </section>
     </main>
+
+    <footer class="footer shell">
+      <p class="footer-copy">© 2026 MVTEC.CO.KR. Independent machine vision consulting site.</p>
+    </footer>
   </div>
 </body>
 </html>
